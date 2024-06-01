@@ -1,0 +1,183 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = dudegomvc
+build_property.RootNamespace = dudegomvc
+build_property.ProjectDir = C:\Users\OPERADORGPS\source\repos\dudegomvc\dudegomvc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\OPERADORGPS\source\repos\dudegomvc\dudegomvc
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/MasterDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzdGVyRGV0YWlsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/SearchInvoice/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoSW52b2ljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbBranches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCcmFuY2hlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbBranches/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCcmFuY2hlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbBranches/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCcmFuY2hlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbBranches/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCcmFuY2hlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbBranches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJCcmFuY2hlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDYXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDYXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDYXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDYXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDYXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCustomers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDdXN0b21lcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCustomers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDdXN0b21lcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCustomers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDdXN0b21lcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCustomers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDdXN0b21lcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbCustomers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJDdXN0b21lcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoiceDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlRGV0YWlsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoiceDetails/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlRGV0YWlsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoiceDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlRGV0YWlsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoiceDetails/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlRGV0YWlsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoiceDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlRGV0YWlsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbInvoices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJJbnZvaWNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbSalespersons/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTYWxlc3BlcnNvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbSalespersons/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTYWxlc3BlcnNvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbSalespersons/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTYWxlc3BlcnNvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbSalespersons/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTYWxlc3BlcnNvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/TbSalespersons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJTYWxlc3BlcnNvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OPERADORGPS/source/repos/dudegomvc/dudegomvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-w6mg5xv4z9

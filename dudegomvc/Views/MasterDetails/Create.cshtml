@@ -1,0 +1,110 @@
+﻿@model dudegomvc.Models.InvoiceViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TbInvoice</h4>
+<hr />
+<div class="container flex flex-row">
+    <div class="flex">
+
+            <div class="form-group">
+                <label class="control-label">Número de factura:</label>
+                <label class="form-control" id="invoiceNumberLabel">@ViewData["InvoiceNumber"]</label>
+                <input type="hidden" id="idInvoiceInput" value="@ViewData["IdInvoice"]" />
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">Nombre del cliente</label>
+                <input type="text" class="form-control" id="NameCustomer" value="@ViewData["NameCustomer"]" readonly>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">Sucursal</label>
+                <input type="text" class="form-control" id="BranchName" value="@ViewData["NameBranch"]" readonly>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Vendedor</label>
+                <input type="text" class="form-control" id="SlP" value="@ViewData["NameSalesperson"]" readonly>
+            </div>
+
+
+            <h4>TbInvoiceDetail</h4>
+
+            <div class="form-group">
+
+                <input type="submit" value="Create" id="submit-button" class="btn btn-primary" />
+
+            </div>
+    
+    </div>
+    <hr />
+    <div class="flex">
+        <div class="flex flex-column">
+            <div class="form-group">
+                <label class="control-label">Placa</label>
+
+                <label for="carSelect">Seleccione un automóvil:</label>
+                <select id="IdCarOPT" class="form-control">
+                    <option value="">Seleccionar automóvil</option>
+                    @foreach (var car in ViewBag.Cars)
+                    {
+                        <option value="@car.IdCar">@car.NumberPlate</option>
+                    }
+                </select>
+
+
+            </div>
+            <div class="form-group">
+                <label class="control-label">Dias</label>
+                <input id="DayDuration" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Precio por dia</label>
+                <input id="PriceDay" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Deposito</label>
+                <input id="RentalDeposit" class="form-control" />
+            </div>
+
+        </div>
+    </div>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table id="tbDetails" class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+            <thead class="text-xs text-gray-700 uppercase ">
+                <tr>
+                    <th scope="col" class="px-6 py-3 bg-gray-50 ">
+                        Tiempo arrendamiento
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Precio por dia
+                    </th>
+                    <th scope="col" class="px-6 py-3 bg-gray-50">
+                        Deposito
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Placa
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Factura
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <input type="button" id="addButton" value="Agregar" class="btn btn-primary" />
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

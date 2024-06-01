@@ -1,0 +1,54 @@
+﻿@model dudegomvc.Models.TbInvoiceDetail
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TbInvoiceDetail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdInvoiceDetails" />
+            <div class="form-group">
+                <label asp-for="IdInvoice" class="control-label"></label>
+                <select asp-for="IdInvoice" class="form-control" asp-items="ViewBag.IdInvoice"></select>
+                <span asp-validation-for="IdInvoice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCar" class="control-label"></label>
+                <select asp-for="IdCar" class="form-control" asp-items="ViewBag.IdCar"></select>
+                <span asp-validation-for="IdCar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DayDuration" class="control-label"></label>
+                <input asp-for="DayDuration" class="form-control" />
+                <span asp-validation-for="DayDuration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PriceDay" class="control-label"></label>
+                <input asp-for="PriceDay" class="form-control" />
+                <span asp-validation-for="PriceDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RentalDeposit" class="control-label"></label>
+                <input asp-for="RentalDeposit" class="form-control" />
+                <span asp-validation-for="RentalDeposit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,51 @@
+﻿@model dudegomvc.Models.TbInvoiceDetail
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TbInvoiceDetail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdInvoice" class="control-label"></label>
+                <select asp-for="IdInvoice" class ="form-control" asp-items="ViewBag.IdInvoice"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCar" class="control-label"></label>
+                <select asp-for="IdCar" class ="form-control" asp-items="ViewBag.IdCar"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DayDuration" class="control-label"></label>
+                <input asp-for="DayDuration" class="form-control" />
+                <span asp-validation-for="DayDuration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PriceDay" class="control-label"></label>
+                <input asp-for="PriceDay" class="form-control" />
+                <span asp-validation-for="PriceDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RentalDeposit" class="control-label"></label>
+                <input asp-for="RentalDeposit" class="form-control" />
+                <span asp-validation-for="RentalDeposit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

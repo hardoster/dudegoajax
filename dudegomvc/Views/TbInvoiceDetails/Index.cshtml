@@ -1,0 +1,59 @@
+﻿@model IEnumerable<dudegomvc.Models.TbInvoiceDetail>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DayDuration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriceDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RentalDeposit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCarNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdInvoiceNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DayDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriceDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalDeposit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCarNavigation.IdCar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdInvoiceNavigation.IdInvoice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdInvoiceDetails">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdInvoiceDetails">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdInvoiceDetails">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
