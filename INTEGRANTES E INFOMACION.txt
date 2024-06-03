@@ -1,0 +1,5 @@
+Integrantes: Harrison Aguilar
+Carnet: 200362
+Visual Studio 2022
+Oracle database 21c EX
+ASP.NET CORE MVC
