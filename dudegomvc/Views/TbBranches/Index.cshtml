@@ -3,45 +3,59 @@
 @{
     ViewData["Title"] = "Index";
 }
+ 
+ 
+<div class="ContainerC flex flex-column">
 
-<h1>Index</h1>
+    <div class=" flex flex-column SectionOne mt-6 items-center">
+        <div class="text-5xl text-center"><span>Sucursales <span class="font-bold text-green-600">DudeGo</span></span></div>
+        <div class="mt-1"><span text-gray>Puedes agregar una nueva sucursal</span></div>
+        <div class=""><span text-gray>precionando el boton "Agregar"</span></div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NameBranch)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhoneNumberBranch)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NameBranch)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumberBranch)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdBranch">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdBranch">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdBranch">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
+        <a asp-action="Create"><div class="rounded-xl bg-green-800 text-white text-lg w-32 h-10 text-center content-center mt-6">Agregar</div></a>
+    </div>
+
+    <div class="SectionTwo mt-12">
+
+        <table id="TableCustomers" class="display table-auto mx-auto text-center">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="p-2 text-center">
+                       Sucursal
+                    </th>
+                    <th class="p-2 text-center">
+                       Direccion
+                    </th>
+                    <th class="p-2 text-center">
+                        Numero de telefono
+                    </th>
+                    <th class="p-2 text-center">
+                        Acciones
+                    </th>
+                  </tr>
+              </thead>
+             <tbody>
+                    @foreach (var item in Model) {
+                             <tr border-t border-gray-200>
+                                <td class="p-2">
+                                    @Html.DisplayFor(modelItem => item.NameBranch)
+                                </td>
+                                  <td class="p-2">
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </td class="p-2">
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PhoneNumberBranch)
+                                </td>
+                               <td class="p-2">
+                                 <a asp-action="Edit" asp-route-id="@item.IdBranch"><i class="fa-solid fa-pen text-green-600"></i></a> 
+                                <a asp-action="Delete" asp-route-id="@item.IdBranch"><i class="fa-solid fa-user-xmark text-green-600"></i></a>
+                                 </td>
+                            </tr>
+                    }
+            </tbody>
 </table>
+
+   </div>
+</div>
+
+

@@ -2,58 +2,101 @@
 
 @{
     ViewData["Title"] = "Index";
-}
+} 
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DayDuration)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PriceDay)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RentalDeposit)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCarNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdInvoiceNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DayDuration)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PriceDay)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RentalDeposit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCarNavigation.IdCar)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdInvoiceNavigation.IdInvoice)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdInvoiceDetails">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdInvoiceDetails">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdInvoiceDetails">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="Container grid grid-cols-[1.3fr_0.70fr]">
+    <div class="containerSection1">
+        <div class="invoiceBarUp flex flex-row mt-6">
+            <div class="form-group mr-4">
+                <label class="control-label">Factura</label>
+                <label class="form-control" id="invoiceNumberLabel">@ViewData["InvoiceNumber"]</label>
+                <input type="hidden" id="idInvoiceInput" value="@ViewData["IdInvoice"]" />
+            </div>
+
+            <div class="form-group mr-4">
+                <label class="control-label">Nombre del cliente</label>
+                <input type="text" class="form-control" id="NameCustomer" value="@ViewData["NameCustomer"]" readonly>
+            </div>
+
+            <div class="form-group mr-4">
+                <label class="control-label">Sucursal</label>
+                <input type="text" class="form-control" id="BranchName" value="@ViewData["NameBranch"]" readonly>
+            </div>
+
+            <div class="form-group mr-4">
+                <label class="control-label">Vendedor</label>
+                <input type="text" class="form-control" id="SlP" value="@ViewData["NameSalesperson"]" readonly>
+            </div>
+        </div>
+
+      
+
+        <div class="flex flex-column mt-12">
+            <table id="TbInvDt" class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                <thead class="text-xs text-gray-700 uppercase ">
+                    <tr>
+                        <th>
+                            dias de contrato
+                        </th>
+                        <th>
+                            Precio por dia
+                        </th>
+                        <th>
+                           Deposito
+                        </th>
+                        <th>
+                            Placa
+                        </th>
+                        <th>
+                           Factura
+                        </th>
+                      
+                    </tr>
+                    </thead>
+                    <tbody>
+                @foreach (var item in Model) {
+
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DayDuration)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PriceDay)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RentalDeposit)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdCarNavigation.NumberPlate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IdInvoiceNavigation.InvoiceNumber)
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <div class="Containersection2 flex flex-column ml-24 rounded-xl shadow-lg p-5">
+
+        <div class="flex text-center justify-center"><span class="font-bold text-green-600 text-3xl">Vista <span class="text-black font-regular text-md">factura</span></span></div>
+
+        <div class="flex justify-center">
+            <img src="~/img/SearchInvoice.svg" alt="Alternate Text" class="w-62" />
+        </div>
+
+        <div class="flex text-center"><span class="font-thin text-gray-600 text-lg">Aqui puedes visualizar el contenido de la factura que ha sido emitida al cliente, puedes tambien regresar al menu anterior para ver una factura de un cliente distinto </span></div>
+        <div class="flex justify-center mt-3">
+            <a asp-action="Index"> <i class="fa-solid fa-chevron-left text-green-600"></i> Buscar otra factura</a>
+        </div>
+
+
+    </div>
+</div>

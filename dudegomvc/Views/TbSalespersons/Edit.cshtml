@@ -4,35 +4,52 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<div class="Container grid grid-cols-[1.3fr_0.70fr]">
 
-<h4>TbSalesperson</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+    <div class="SectionViewInf flex flex-column text-6xl">
+        <div class="flex justify-center">
+            <img src="~/img/Create-edit.svg" alt="Alternate Text" class="w-50" />
+        </div>
+        <div class="flex"><span class="">Haras cambios?...</span> </div>
+        <div class="w-50"><hr></hr></div>
+
+        <div class="text-lg mt-2.5 pr-20 mr-20">
+            <span>
+                Recuerda llenar todos los campos del formulario,
+                cada uno de ellos es muy importante.
+            </span>
+        </div>
+    </div>
+
+    <div class="SectionViewMenu flex flex-column mt-6">
+
+        <div class="flex text-center"><span class="font-bold text-green-600 text-3xl">Nuevo <span class="text-black font-regular text-md">Registro</span></span></div>
+
+        <form asp-action="Edit" class="mt-6">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdSalesperson" />
             <div class="form-group">
-                <label asp-for="NameSalesperson" class="control-label"></label>
-                <input asp-for="NameSalesperson" class="form-control" />
+                <label class="control-label font-thin text-lg">Nombre</label>
+                <input asp-for="NameSalesperson" class="form-control mb-3" />
                 <span asp-validation-for="NameSalesperson" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CodeSalesperson" class="control-label"></label>
-                <input asp-for="CodeSalesperson" class="form-control" />
+                <label class="control-label font-thin text-lg">Codigo</label>
+                <input asp-for="CodeSalesperson" class="form-control mb-3" />
                 <span asp-validation-for="CodeSalesperson" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group bg-green-600 rounded-full w-28 h-10 text-center content-center text-white font-thin">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <input type="submit" value=" Guardar" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index"> <i class="fa-solid fa-chevron-left text-green-600"></i> Regresar a vendedores</a>
 </div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

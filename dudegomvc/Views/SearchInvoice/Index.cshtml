@@ -4,48 +4,61 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="ContainerC flex flex-column">
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.InvoiceNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdBranchNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCustomerNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdSalespersonNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.InvoiceNumber)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdBranchNavigation.IdBranch)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdCustomerNavigation.IdCustomer)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdSalespersonNavigation.IdSalesperson)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.IdInvoice">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.IdInvoice">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.IdInvoice">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class=" flex flex-column SectionOne mt-6 items-center">
+        <div class="text-5xl text-center"><span>Buscar <span class="font-bold text-green-600">factura</span></span></div>
+        <div class="mt-1"><span text-gray>Puedes buscar una factura emitida</span></div>
+        <div class=""><span text-gray>precionando el boton de accion en cada fila</span></div>
+
+    </div>
+
+    <div class="SectionTwo mt-12">
+
+        <table id="TableInvoicesSearch" class="display table-auto mx-auto text-center">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="p-2 text-center">
+                                    Numero de factura
+                                </th>
+                    <th class="p-2 text-center">
+                                    Sucursal
+                                </th >
+                    <th class="p-2 text-center">
+                                   Cliente
+                                </th>
+                    <th class="p-2 text-center">
+                                    Vendedor
+                                </th>
+                    <th class="p-2 text-center">
+                                    Acciones
+                                </th>
+                            </tr>
+                </thead>
+           <tbody> 
+               @foreach (var item in Model)
+                            {
+                    <tr border-t border-gray-200>
+                        <td class="p-2">
+                                        @Html.DisplayFor(modelItem => item.InvoiceNumber)
+                                    </td>
+                        <td class="p-2">
+                                        @Html.DisplayFor(modelItem => item.IdBranchNavigation.NameBranch)
+                                    </td>
+                        <td class="p-2">
+                                        @Html.DisplayFor(modelItem => item.IdCustomerNavigation.NameCustomer)
+                                    </td>
+                        <td class="p-2">
+                                        @Html.DisplayFor(modelItem => item.IdSalespersonNavigation.NameSalesperson)
+                                    </td>
+                        <td class="p-2">
+                                        <a asp-controller="TbInvoiceDetails" asp-action="Index" asp-route-id="@item.IdInvoice"><i class="fa-solid fa-eye text-green-600"></i></a> 
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+
+    </div>
+</div>

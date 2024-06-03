@@ -1,105 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|c:\\users\\operadorgps\\source\\repos\\dudegomvc\\dudegomvc\\controllers\\searchinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|solutionrelative:dudegomvc\\controllers\\searchinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|c:\\users\\operadorgps\\source\\repos\\dudegomvc\\dudegomvc\\views\\searchinvoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|solutionrelative:dudegomvc\\views\\searchinvoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|c:\\users\\operadorgps\\source\\repos\\dudegomvc\\dudegomvc\\controllers\\tbinvoicedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|solutionrelative:dudegomvc\\controllers\\tbinvoicedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|c:\\users\\operadorgps\\source\\repos\\dudegomvc\\dudegomvc\\views\\masterdetails\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|solutionrelative:dudegomvc\\views\\masterdetails\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|c:\\users\\operadorgps\\source\\repos\\dudegomvc\\dudegomvc\\wwwroot\\js\\datatables.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5E379DE2-95EE-4154-BE87-63977FCF13FA}|dudegomvc\\dudegomvc.csproj|solutionrelative:dudegomvc\\wwwroot\\js\\datatables.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\gperl\\source\\repos\\dudegoajax\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Views\\SearchInvoice\\Index.cshtml",
-              "RelativeDocumentMoniker": "dudegomvc\\Views\\SearchInvoice\\Index.cshtml",
-              "ToolTip": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Views\\SearchInvoice\\Index.cshtml",
-              "RelativeToolTip": "dudegomvc\\Views\\SearchInvoice\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T14:12:10.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SearchInvoice.cs",
-              "DocumentMoniker": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Controllers\\SearchInvoice.cs",
-              "RelativeDocumentMoniker": "dudegomvc\\Controllers\\SearchInvoice.cs",
-              "ToolTip": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Controllers\\SearchInvoice.cs",
-              "RelativeToolTip": "dudegomvc\\Controllers\\SearchInvoice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:09:58.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "datatables.js",
-              "DocumentMoniker": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\wwwroot\\js\\datatables.js",
-              "RelativeDocumentMoniker": "dudegomvc\\wwwroot\\js\\datatables.js",
-              "ToolTip": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\wwwroot\\js\\datatables.js",
-              "RelativeToolTip": "dudegomvc\\wwwroot\\js\\datatables.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-01T04:11:19.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Views\\MasterDetails\\Create.cshtml",
-              "RelativeDocumentMoniker": "dudegomvc\\Views\\MasterDetails\\Create.cshtml",
-              "ToolTip": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Views\\MasterDetails\\Create.cshtml",
-              "RelativeToolTip": "dudegomvc\\Views\\MasterDetails\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-01T01:54:37.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TbInvoiceDetailsController.cs",
-              "DocumentMoniker": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Controllers\\TbInvoiceDetailsController.cs",
-              "RelativeDocumentMoniker": "dudegomvc\\Controllers\\TbInvoiceDetailsController.cs",
-              "ToolTip": "C:\\Users\\OPERADORGPS\\source\\repos\\dudegomvc\\dudegomvc\\Controllers\\TbInvoiceDetailsController.cs",
-              "RelativeToolTip": "dudegomvc\\Controllers\\TbInvoiceDetailsController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T01:32:10.32Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

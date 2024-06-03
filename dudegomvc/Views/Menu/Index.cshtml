@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="Container grid grid-cols-[1.3fr_0.70fr]">
+    <div class="SectionViewInf flex flex-column text-6xl mt-28">
+        <div><span class="">Ahora puede crear</span> </div>
+        <div><span class="">una factura de manera</span></div>
+        <div><span class="text-green-600">mas simple.</span></div>
+        <div class="text-lg mt-2.5 pr-20 mr-20">
+            <span>
+                Gracias a nuestro nuevo concepto ahora puedes crear facturas
+                de manera mas simple respetando la integridad de tus datos
+            </span>
+        </div>
+    </div>
+
+    <div class="SectionViewMenu grid grid-cols-2 auto-rows-auto mt-12">
+        <a asp-controller="TbCustomers" asp-action="Index" class="hover:text-green-600">
+            <div class="shadow-md rounded-lg w-44 h-40 flex flex-col justify-center items-center mr-12 cursor-pointer hover:shadow-green-200 hover:mb-5 hover:shadow-lg">
+                <i class="fa-solid fa-user-plus text-4xl"></i>
+                <span class="text-xl">Clientes</span>
+                <span class="text-xs">Crea un nuevo cliente</span>
+            </div>
+        </a>
+
+        <a asp-controller="TbCars" asp-action="Index" class="hover:text-green-600">
+        <div class="shadow-md flex-column rounded-lg shadow-md w-44 h-40 flex flex-column justify-center items-center mr-12 cursor-pointer hover:shadow-green-200 hover:mb-5 hover:shadow-lg">
+            <i class="fa-solid fa-car text-4xl"></i>
+            <Span class="text-xl">Vehiculos</Span>
+            <span class="text-xs">Crea un nuevo vehiculo</span>
+        </div>
+        </a>
+
+        <a asp-controller="TbBranches" asp-action="Index" class="hover:text-green-600">
+        <div class="shadow-md flex-column rounded-lg shadow-md w-44 h-40 flex flex-column justify-center items-center mr-12 cursor-pointer hover:shadow-green-200 hover:mb-5 hover:shadow-lg">
+            <i class="fa-solid fa-shop text-4xl"></i>
+            <Span class="text-xl">Sucursales</Span>
+            <span class="text-xs">Crea una nueva sucursal</span>
+        </div>
+        </a>
+
+        <a asp-controller="TbSalespersons" asp-action="Index" class="hover:text-green-600">
+        <div class="shadow-md flex-column rounded-lg shadow-md w-44 h-40 flex flex-column justify-center items-center mr-12 cursor-pointer hover:shadow-green-200 hover:mb-5 hover:shadow-lg">
+            <i class="fa-solid fa-user-tie text-4xl"></i>
+            <Span class="text-xl">Vendedores</Span>
+            <span class="text-xs">Agrega un nuevo vendedor</span>
+        </div>
+        </a>
+
+        <a asp-controller="TbInvoices" asp-action="Index" class="hover:text-green-600">
+        <div class="shadow-md flex-column rounded-lg shadow-md w-44 h-40 flex flex-column justify-center items-center mr-12 cursor-pointer hover:shadow-green-200 hover:mt-5 hover:shadow-lg">
+            <i class="fa-solid fa-receipt text-4xl"></i>
+            <Span class="text-xl">Crear factura</Span>
+            <span class="text-xs">Crea una nueva factura</span>
+        </div>
+        </a>
+
+        <a asp-controller="SearchInvoice" asp-action="Index" class="hover:text-green-600">
+        <div class="shadow-md flex-column rounded-lg shadow-md w-44 h-40 flex flex-column justify-center items-center mr-12 cursor-pointer hover:shadow-green-200 hover:mt-5 hover:shadow-lg">
+            <i class="fa-solid fa-magnifying-glass text-4xl"></i>
+            <Span class="text-xl">Buscar factura</Span>
+            <span class="text-xs text-center">Encuentra el contenido de tu factura</span>
+        </div>
+        </a>
+
+    </div>
+
+</div>
+
+
+
+
+@{
+}

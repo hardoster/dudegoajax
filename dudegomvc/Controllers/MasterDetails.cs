@@ -19,29 +19,40 @@ namespace dudegomvc.Controllers
         // GET: TbInvoices/Create
         public IActionResult Create()
         {
+            // Obtener el último ID de factura
             var lastIdInvoice = _context.TbInvoices.OrderByDescending(i => i.IdInvoice).FirstOrDefault()?.IdInvoice;
-            ViewData["IdInvoice"] = lastIdInvoice.ToString(); 
+            ViewData["IdInvoice"] = lastIdInvoice?.ToString();
 
+            // Obtener el último número de factura
             var lastNumberInvoice = _context.TbInvoices.OrderByDescending(i => i.InvoiceNumber).FirstOrDefault()?.InvoiceNumber;
-            ViewData["InvoiceNumber"] = lastNumberInvoice.ToString(); // Convierte a string si el input espera un string
+            ViewData["InvoiceNumber"] = lastNumberInvoice;
 
-            var lastNameBranch = _context.TbBranches.OrderByDescending(tb => tb.IdBranch).FirstOrDefault()?.NameBranch;
+            // Obtener el nombre de la última sucursal asociada al último IdInvoice
+            var lastBranchId = _context.TbInvoices.OrderByDescending(i => i.IdInvoice).FirstOrDefault()?.IdBranch;
+            var lastNameBranch = _context.TbBranches.FirstOrDefault(tb => tb.IdBranch == lastBranchId)?.NameBranch;
             ViewData["NameBranch"] = lastNameBranch;
 
-            var lastNameCustomer = _context.TbCustomers.OrderByDescending(tb => tb.IdCustomer).FirstOrDefault()?.NameCustomer;
-            ViewData["NameCustomer"] = lastNameCustomer;
+            // Obtener el nombre del último cliente asociado al último IdInvoice
+            var lastCustomerId = _context.TbInvoices.OrderByDescending(tb => tb.IdInvoice).FirstOrDefault()?.IdCustomer;
+            var lastCustomer = _context.TbCustomers.FirstOrDefault(c => c.IdCustomer == lastCustomerId);
+            ViewData["NameCustomer"] = lastCustomer?.NameCustomer;
 
-            var lastNameSalesPerson = _context.TbSalespeople.OrderByDescending(tb => tb.IdSalesperson).FirstOrDefault()?.NameSalesperson;
-            ViewData["NameSalesperson"] = lastNameSalesPerson;
+            // Obtener el nombre del último vendedor asociado al último IdInvoice
+            var lastSalesPersonId = _context.TbInvoices.OrderByDescending(tb => tb.IdInvoice).FirstOrDefault()?.IdSalesperson;
+            var lastSalesPerson = _context.TbSalespeople.FirstOrDefault(sp => sp.IdSalesperson == lastSalesPersonId);
+            ViewData["NameSalesperson"] = lastSalesPerson?.NameSalesperson;
 
-            var cars = _context.TbCars.ToList(); 
+            // Obtener la lista de coches
+            var cars = _context.TbCars.ToList();
             ViewBag.Cars = cars;
 
             return View();
         }
 
 
-                [HttpPost("ListDetail78")]
+
+
+        [HttpPost("ListDetail78")]
                 public async Task<IActionResult> ListDetail78([FromBody] List<TbInvoiceDetail> dataToSend)
                 {
 
@@ -62,7 +73,7 @@ namespace dudegomvc.Controllers
                         }
 
                         await _context.SaveChangesAsync();
-         return RedirectToAction("Index", "SearchInvoice");
+                return RedirectToAction("Index", "Menu");
 
             }
 
@@ -72,7 +83,7 @@ namespace dudegomvc.Controllers
 
                 
 
-        
+        /*
                 [HttpPost]
                 [ValidateAntiForgeryToken]
 
@@ -106,7 +117,7 @@ namespace dudegomvc.Controllers
                     // Retorna la vista con el ViewModel
                     return View(viewModel);
 
-                }
+                }*/
 
     }
 }

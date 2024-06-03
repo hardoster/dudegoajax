@@ -4,56 +4,72 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NumberPlate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Brand)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Model)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Color)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Year)
-            </th>
-            <th></th>
-        </tr>
+<div class="ContainerC flex flex-column">
+
+    <div class=" flex flex-column SectionOne mt-6 items-center">
+        <div class="text-5xl text-center"><span>Vehiculos <span class="font-bold text-green-600">DudeGo</span></span></div>
+        <div class="mt-1"><span text-gray>Unidades disponibles para alquilar</span></div>
+        <div class=""><span text-gray>Quieres agregar otro?</span></div>
+
+        <a asp-action="Create"><div class="rounded-xl bg-green-800 text-white text-lg w-32 h-10 text-center content-center mt-6">Agregar</div></a>
+    </div>
+
+    <div class="SectionTwo mt-12">
+
+        <table id="TableCars" class="display table-auto mx-auto text-center">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="p-2 text-center">
+                        Placa
+                    </th>
+                    <th class="p-2 text-center">
+                        Marca
+                    </th>
+                    <th class="p-2 text-center">
+                       Modelo
+                    </th>
+                    <th class="p-2 text-center">
+                        Color
+                    </th>
+                    <th class ="p-2 text-center">
+                       Año
+                    </th>
+                    <th class="p-2 text-center">
+                        Acciones
+                    </th>
+                </tr>
     </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumberPlate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Model)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Color)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCar">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCar">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCar">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+             <tbody>
+                @foreach (var item in Model) {
+                    <tr border-t border-gray-200>
+                        <td class="p-2">
+                                @Html.DisplayFor(modelItem => item.NumberPlate)
+                            </td>
+                        <td class="p-2">
+                                @Html.DisplayFor(modelItem => item.Brand)
+                            </td>
+                        <td class="p-2">
+                                @Html.DisplayFor(modelItem => item.Model)
+                            </td>
+                        <td class="p-2">
+                                @Html.DisplayFor(modelItem => item.Color)
+                            </td>
+                        <td class="p-2">
+                                @Html.DisplayFor(modelItem => item.Year)
+                            </td >
+                            <td class="p-2">
+                        
+                            <a asp-action="Edit" asp-route-id="@item.IdCar"><i class="fa-solid fa-pen text-green-600"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.IdCar"><i class="fa-solid fa-user-xmark text-green-600"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
+    </div>
+</div>
+

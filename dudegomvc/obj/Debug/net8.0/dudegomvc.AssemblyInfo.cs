@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dudegomvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ec9b13a6d623d153be63f1174851cd21499204f")]
 [assembly: System.Reflection.AssemblyProductAttribute("dudegomvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dudegomvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

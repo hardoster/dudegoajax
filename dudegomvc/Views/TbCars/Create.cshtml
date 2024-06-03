@@ -4,49 +4,65 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>TbCar</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+<div class="Container grid grid-cols-[1.3fr_0.70fr]">
+
+    <div class="SectionViewInf flex flex-column text-6xl">
+        <div class="flex justify-center">
+            <img src="~/img/Create.svg" alt="Alternate Text" class="w-50" />
+        </div>
+        <div class="flex"><span class="">Comencemos...</span> </div>
+        <div class="w-50"><hr></hr></div>
+
+        <div class="text-lg mt-2.5 pr-20 mr-20">
+            <span>
+                Recuerda llenar todos los campos del formulario,
+                cada uno de ellos es muy importante.
+            </span>
+        </div>
+    </div>
+
+
+    <div class="SectionViewMenu flex flex-column mt-6">
+
+        <div class="flex text-center"><span class="font-bold text-green-600 text-3xl">Nuevo <span class="text-black font-regular text-md">Registro</span></span></div>
+
+        <form asp-action="Create" class="mt-6">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NumberPlate" class="control-label"></label>
+                <label class="control-label font-thin text-lg">Numero de Placa</label>
                 <input asp-for="NumberPlate" class="form-control" />
                 <span asp-validation-for="NumberPlate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Brand" class="control-label"></label>
+                <label class="control-label font-thin text-lg">Marca</label>
                 <input asp-for="Brand" class="form-control" />
                 <span asp-validation-for="Brand" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Model" class="control-label"></label>
+                <label class="control-label font-thin text-lg">Modelo</label>
                 <input asp-for="Model" class="form-control" />
                 <span asp-validation-for="Model" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Color" class="control-label"></label>
+                <label class="control-label font-thin text-lg">Color</label>
                 <input asp-for="Color" class="form-control" />
                 <span asp-validation-for="Color" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Year" class="control-label"></label>
+                <label class="control-label font-thin text-lg">Año</label>
                 <input asp-for="Year" class="form-control" />
                 <span asp-validation-for="Year" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="form-group mt-6 bg-green-600 rounded-full w-28 h-10 text-center content-center text-white font-thin">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <input type="submit" value=" Guardar" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

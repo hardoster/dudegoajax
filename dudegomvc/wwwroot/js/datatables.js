@@ -1,10 +1,47 @@
 ﻿$(document).ready(function () {
 
     var table = $('#tbDetails').DataTable({
+        pageLength: 5,
         language: {
             // Configuración del idioma de la tabla
         },
     });
+    
+        var table2 = $('#TableInvoicesSearch').DataTable({
+            language: {
+                // Configuración del idioma de la tabla
+            },
+        });
+
+    //PARA TABLA DE CLIENTES
+    var table3 = $('#TableCustomers').DataTable({
+        pageLength: 3,
+        language: {
+            // Configuración del idioma de la tabla
+        },
+    });
+
+    //PARA TABLA DE Invoicedetails
+    var table3 = $('#TbInvDt').DataTable({
+        pageLength: 3,
+        language: {
+            // Configuración del idioma de la tabla
+        },
+    });
+
+
+    //PARA TABLA DE vehiculos
+    var table3 = $('#TableCars').DataTable({
+        pageLength: 3,
+        language: {
+            // Configuración del idioma de la tabla
+        },
+    });
+
+
+
+
+   
 
     $('#addButton').on('click', function () {
         var dayDuration = $('#DayDuration').val();
@@ -36,7 +73,6 @@
 
 
     $('#submit-button').on('click', function (event) {
-        event.preventDefault(); // Previene el envío del formulario por defecto
 
         var dataToSend = [];
         $('#tbDetails tbody tr').each(function () {
@@ -63,6 +99,8 @@
             success: function (data) {
                 console.log('Datos enviados con éxito:', data);
                 // Aquí puedes manejar la respuesta del servidor si es necesario
+                window.location.href = 'https://localhost:44315';
+
             },
             error: function (xhr, status, error) {
                 console.error('Error:', error);
@@ -139,4 +177,10 @@
         $('#invoiceForm').submit();
     });
     */
+
+
+
+
+
+
 });

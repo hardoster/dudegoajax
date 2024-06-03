@@ -21,7 +21,10 @@ namespace dudegomvc.Controllers
         // GET: TbInvoices
         public async Task<IActionResult> Index()
         {
-            var modelContext = _context.TbInvoices.Include(t => t.IdBranchNavigation).Include(t => t.IdCustomerNavigation).Include(t => t.IdSalespersonNavigation);
+            var modelContext = _context.TbInvoices
+                 .Include(t => t.IdBranchNavigation) // Incluir toda la entidad Branch
+                 .Include(t => t.IdCustomerNavigation) // Incluir toda la entidad Customer
+                 .Include(t => t.IdSalespersonNavigation); // Incluir toda la entidad Salesperson
             return View(await modelContext.ToListAsync());
         }
 
@@ -49,9 +52,9 @@ namespace dudegomvc.Controllers
         // GET: TbInvoices/Create
         public IActionResult Create()
         {
-            ViewData["IdBranch"] = new SelectList(_context.TbBranches, "IdBranch", "IdBranch");
-            ViewData["IdCustomer"] = new SelectList(_context.TbCustomers, "IdCustomer", "IdCustomer");
-            ViewData["IdSalesperson"] = new SelectList(_context.TbSalespeople, "IdSalesperson", "IdSalesperson");
+            ViewData["IdBranch"] = new SelectList(_context.TbBranches, "IdBranch", "NameBranch");
+            ViewData["IdCustomer"] = new SelectList(_context.TbCustomers, "IdCustomer", "NameCustomer");
+            ViewData["IdSalesperson"] = new SelectList(_context.TbSalespeople, "IdSalesperson", "CodeSalesperson");
             return View();
         }
 
